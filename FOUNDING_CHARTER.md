@@ -2,7 +2,7 @@
 
 ## 1. Scope
 
-This charter governs the founding inquiry of the Taleb repository. It authorizes documentary reconstruction only. It does not establish a minister, grant a voice, certify semantic completion, or register Taleb in Sanctum.
+This charter establishes the Taleb minister house and governs its founding inquiry. The founding act is settled. It authorizes documentary reconstruction only and does not grant operational minister status, grant a voice, certify semantic completion, or register Taleb in Sanctum.
 
 ## 2. Corpus before architecture
 

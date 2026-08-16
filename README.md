@@ -1,6 +1,6 @@
 # Taleb
 
-This repository is the founding workspace for a possible Taleb minister house. It is not an operational minister, is not registered in Sanctum, and has no authority to speak in Taleb's voice.
+This repository founds the Taleb minister house. The founding act is settled; the house's native cognitive architecture remains to be discovered from the corpus. The house is not yet an operational minister, is not registered in Sanctum, and has no authority to speak in Taleb's voice.
 
 The founding task is corpus-first reconstruction. Primary sources govern secondary accounts. Familiar labels—including fragility, antifragility, Black Swans, and skin in the game—are leads to investigate, not a preselected architecture. The native unit of Taleb's reasoning must be discovered through repeated evidence across the primary corpus; it is not declared by this founding layer.
 
