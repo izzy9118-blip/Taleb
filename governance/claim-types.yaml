@@ -1,0 +1,45 @@
+record_type: taleb_claim_type_vocabulary
+version: 0.1.0
+house: taleb
+status: OWNER_APPROVED_ACTIVE
+completeness: PENDING_PROBE
+
+claim_types:
+  - id: TALEB_EXACT_EXPRESSION
+    establishes: what an exact Taleb witness states at a stable locator
+    minimum_ground: exact version or edition plus page, section, or equivalent locator
+  - id: TALEB_RECURRENT_METHOD
+    establishes: a candidate repeated feature of Taleb's reasoning
+    minimum_ground: materially distinct primary works plus counterevidence search
+  - id: TECHNICAL_PROPOSITION
+    establishes: a proposition within explicit assumptions and derivation
+    minimum_ground: exact technical source, assumptions, derivation locator, and stated limits
+  - id: AUTHOR_PUBLIC_ACT
+    establishes: what Taleb expressed in a particular lecture, interview, notebook, or archived public act
+    minimum_ground: exact attributable record, context, date, and locator
+  - id: INSTRUMENT_TERM
+    establishes: the contractual or rule-defined structure of a market instrument
+    minimum_ground: exact contract specification, exchange rule, or governing instrument
+  - id: MARKET_OBSERVATION
+    establishes: an observed market state at a stated time
+    minimum_ground: timestamped trades, quotes, exchange record, filing, or governed vendor record
+  - id: ISSUER_OR_REGULATORY_FACT
+    establishes: an attributable issuer, legal, or regulatory fact
+    minimum_ground: exact issuer filing, regulator record, rule, or official event record
+  - id: DERIVED_MARKET_METRIC
+    establishes: a calculation from governed market inputs
+    minimum_ground: raw inputs, observation times, assumptions, and complete transformation chain
+  - id: SCENARIO_CONSEQUENCE
+    establishes: a conditional consequence under stated assumptions
+    minimum_ground: governed inputs, explicit scenario, payoff or exposure relation, and inference limits
+  - id: DECISION_POSTURE
+    establishes: a bounded response to the evidence and unresolved risks
+    minimum_ground: cited evidence chain, alternatives, failure conditions, and no execution effect
+  - id: UNRESOLVED_QUESTION
+    establishes: a question the current ground cannot close
+    minimum_ground: the evidentiary gap and what evidence could change it
+
+prohibitions:
+  - no_claim_type_converts_inference_into_observation
+  - no_claim_type_confers_architectural_authority_by_itself
+  - no_claim_type_authorizes_voice_or_execution

@@ -2,7 +2,7 @@
 
 This repository founds the Taleb minister house. The founding act is settled; the house's native cognitive architecture remains to be discovered from the corpus. The house is not yet an operational minister, is not registered in Sanctum, and has no authority to speak in Taleb's voice.
 
-The founding task is corpus-first reconstruction. Primary sources govern secondary accounts. Familiar labels—including fragility, antifragility, Black Swans, and skin in the game—are leads to investigate, not a preselected architecture. The native unit of Taleb's reasoning must be discovered through repeated evidence across the primary corpus; it is not declared by this founding layer.
+The founding task is corpus-first reconstruction. Primary sources govern reconstruction, and unrelated external material is ignored. Familiar labels—including fragility, antifragility, Black Swans, and skin in the game—are leads to investigate, not a preselected architecture. The native unit of Taleb's reasoning must be discovered through repeated evidence across the primary corpus; it is not declared by this founding layer.
 
 Current status: `FOUNDING`, `NOT_OPERATIONAL`, and `PENDING_PROBE`. Semantic completion remains explicitly incomplete.
 
@@ -15,6 +15,8 @@ Current status: `FOUNDING`, `NOT_OPERATIONAL`, and `PENDING_PROBE`. Semantic com
 - `corpus/acquisition-queue.yaml` orders exact-witness acquisition.
 - `corpus/technical-work-map.yaml` identifies the first market and risk paper lane without inferring its final relation to the Incerto.
 - `market/evidence-board.yaml` defines the market evidence Taleb will eventually analyze, separately from the documentary corpus.
+- `governance/source-hierarchy.yaml` assigns authority by claim type and rejects unrelated material.
+- `contracts/evidence-record.schema.json` binds consequential claims to their sources, times, transformations, conflicts, and limits.
 - `method/acquisition-protocol.yaml` governs admission of material into the corpus.
 - `method/aphorism-reading-protocol.yaml` follows the reading constraint stated by the author-hosted aphorism witness.
 - `readings/index.yaml` admits bounded, page-pinned reading records without converting them into architecture.

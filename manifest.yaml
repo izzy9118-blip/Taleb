@@ -1,6 +1,6 @@
 schema_version: 1.0
 record_type: taleb_founding_manifest
-version: 0.5.0
+version: 0.6.0
 
 identity:
   house: taleb
@@ -43,19 +43,21 @@ required_capabilities:
       unit of his reasoning.
 
 source_governance:
-  precedence:
-    - primary_sources
-    - contemporaneous_context_and_direct_interlocutors
-    - secondary_scholarship_and_commentary
+  model: CLAIM_RELATIVE_AUTHORITY
+  hierarchy: governance/source-hierarchy.yaml
+  evidence_contract: contracts/evidence-record.schema.json
+  admission: DIRECT_PROJECT_RELEVANCE_REQUIRED
   rule: >-
-    Secondary accounts may guide retrieval, supply context, and pose tests, but
-    they may not override primary sources or certify an interpretation against them.
+    Primary sources govern reconstruction. External material enters only when
+    directly required to acquire an exact witness, establish relevant context, or
+    test a specific claim. Unrelated material is ignored.
 
 safeguards:
   - no_ai_self_certification
   - no_premature_voice_imitation
   - no_final_architecture_before_repeated_corpus_evidence
-  - primary_sources_govern_secondary_accounts
+  - primary_sources_govern_reconstruction
+  - unrelated_external_material_is_ignored
   - failed_architectural_experiments_remain_visible
   - supersession_must_be_explicit_and_forward_moving
   - founding_is_not_operational_status
@@ -67,6 +69,10 @@ records:
   founding_charter: FOUNDING_CHARTER.md
   approved_plan_decision: governance/decisions/2026-08-17-approved-plan-phases-1-3.yaml
   founding_audit: governance/audits/2026-08-17-founding-audit.yaml
+  source_hierarchy: governance/source-hierarchy.yaml
+  claim_types: governance/claim-types.yaml
+  source_hierarchy_tests: governance/source-hierarchy-tests.yaml
+  evidence_contract: contracts/evidence-record.schema.json
   corpus: corpus/index.yaml
   works_board: corpus/works.yaml
   acquisition_queue: corpus/acquisition-queue.yaml
@@ -86,6 +92,10 @@ load_order:
   - FOUNDING_CHARTER.md
   - governance/decisions/2026-08-17-approved-plan-phases-1-3.yaml
   - governance/audits/2026-08-17-founding-audit.yaml
+  - governance/claim-types.yaml
+  - governance/source-hierarchy.yaml
+  - contracts/evidence-record.schema.json
+  - governance/source-hierarchy-tests.yaml
   - method/acquisition-protocol.yaml
   - corpus/index.yaml
   - corpus/works.yaml

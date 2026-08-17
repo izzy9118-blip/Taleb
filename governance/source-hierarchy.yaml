@@ -1,0 +1,111 @@
+record_type: taleb_source_hierarchy
+id: TAL-GOV-SOURCE-001
+version: 0.1.0
+status: OWNER_APPROVED_ACTIVE
+completeness: PENDING_PROBE
+self_certification: PROHIBITED
+decision_record: decisions/2026-08-17-approved-plan-phases-1-3.yaml
+claim_types: claim-types.yaml
+evidence_contract: ../contracts/evidence-record.schema.json
+
+model: CLAIM_RELATIVE_AUTHORITY
+
+admission:
+  rule: DIRECT_PROJECT_RELEVANCE_REQUIRED
+  admitted_purposes:
+    - reconstruct an exact Taleb expression
+    - test recurrence across Taleb primary works
+    - evaluate a technical proposition
+    - establish an instrument term or market state
+    - establish a relevant issuer or regulatory fact
+    - acquire an exact primary witness
+    - test a named claim with directly relevant contrary evidence
+  rejection_rule: >-
+    Material with no direct function in a named repository question is ignored. No
+    general secondary, criticism, publisher, promotion, review, or commentary lane
+    exists.
+
+authority_rules:
+  - id: TAL-AUTH-001
+    claim_type: TALEB_EXACT_EXPRESSION
+    governing_ground: exact authored witness at a stable locator
+    limit: authority covers that witness and wording only
+  - id: TAL-AUTH-002
+    claim_type: TALEB_RECURRENT_METHOD
+    governing_ground: repeated evidence across materially distinct primary works
+    limit: isolated passages, titles, famous terms, and retrospective labels do not establish recurrence
+  - id: TAL-AUTH-003
+    claim_type: TECHNICAL_PROPOSITION
+    governing_ground: exact assumptions, definitions, derivation, and limits
+    limit: authorship and publication status do not cure a failed derivation
+  - id: TAL-AUTH-004
+    claim_type: AUTHOR_PUBLIC_ACT
+    governing_ground: exact attributable record with context and date
+    limit: the act establishes what was expressed there, not permanent architecture
+  - id: TAL-AUTH-005
+    claim_type: INSTRUMENT_TERM
+    governing_ground: exact governing contract, specification, or exchange rule
+    limit: commentary cannot replace the governing instrument
+  - id: TAL-AUTH-006
+    claim_type: MARKET_OBSERVATION
+    governing_ground: timestamped market, exchange, filing, or governed vendor record
+    limit: narratives and later summaries cannot replace contemporaneous evidence
+  - id: TAL-AUTH-007
+    claim_type: ISSUER_OR_REGULATORY_FACT
+    governing_ground: exact issuer, regulator, rule, or official event record
+    limit: the record governs only its attributable scope and effective time
+  - id: TAL-AUTH-008
+    claim_type: DERIVED_MARKET_METRIC
+    governing_ground: governed inputs plus a complete visible transformation chain
+    limit: derived output cannot be presented as raw observation
+  - id: TAL-AUTH-009
+    claim_type: SCENARIO_CONSEQUENCE
+    governing_ground: governed inputs, explicit scenario, and exposure or payoff relation
+    limit: conditional consequence is not prediction or observed fact
+  - id: TAL-AUTH-010
+    claim_type: DECISION_POSTURE
+    governing_ground: attributable evidence chain, alternatives, limits, and failure conditions
+    limit: posture has no order-generation or execution effect
+  - id: TAL-AUTH-011
+    claim_type: UNRESOLVED_QUESTION
+    governing_ground: documented gap and named evidence requirement
+    limit: search failure is not negative evidence
+
+bibliographic_rule: >-
+  Every primary work records all listed authors as ordinary bibliography. No separate
+  contribution-allocation machinery is created.
+
+revision_rules:
+  - Later editions and revisions remain distinct witnesses.
+  - A later formulation does not silently erase an earlier one.
+  - Retrospective description does not automatically override a contemporaneous record.
+  - Every claim names the exact version or edition it uses.
+
+market_time_rules:
+  - Observation time and publication time remain distinct.
+  - Adjusted, revised, or backfilled data disclose the transformation and revision.
+  - Data unavailable at the historical decision time cannot be presented as contemporaneously knowable.
+  - Options-derived values preserve quotes, contract terms, rates, dividends, model assumptions, and interpolation where applicable.
+
+conflict_rules:
+  - Contrary primary evidence remains visible.
+  - Repetition from one originating chain is not independent corroboration.
+  - Market narrative yields to contrary timestamped market evidence for a market observation.
+  - Technical disagreement returns to assumptions, definitions, and derivations.
+  - Unresolved conflict remains unresolved.
+  - Search failure is not evidence of absence.
+
+prohibitions:
+  - no_unrelated_source_admission
+  - no_universal_authority_for_any_source
+  - no_commentary_as_market_observation
+  - no_derived_metric_as_raw_data
+  - no_hidden_lookahead
+  - no_ai_truth_or_completeness_certification
+  - no_voice_authority
+  - no_execution_authority
+
+validation_boundary: >-
+  Structural validation may confirm classifications, fields, locators, timestamps,
+  and transformation records. It does not certify source truth, derivation validity,
+  interpretation, architecture, voice, or semantic completion.

@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/izzy9118-blip/Taleb/contracts/evidence-record.schema.json",
+  "title": "Taleb Evidence Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_type",
+    "claim_id",
+    "claim_type",
+    "statement",
+    "status",
+    "source",
+    "authority",
+    "historical_availability",
+    "contradictions",
+    "limitations",
+    "architecture_effect",
+    "execution_effect"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "record_type": {"const": "taleb_evidence_record"},
+    "claim_id": {"type": "string", "pattern": "^TAL-EV-[A-Z0-9-]+$"},
+    "claim_type": {
+      "enum": [
+        "TALEB_EXACT_EXPRESSION",
+        "TALEB_RECURRENT_METHOD",
+        "TECHNICAL_PROPOSITION",
+        "AUTHOR_PUBLIC_ACT",
+        "INSTRUMENT_TERM",
+        "MARKET_OBSERVATION",
+        "ISSUER_OR_REGULATORY_FACT",
+        "DERIVED_MARKET_METRIC",
+        "SCENARIO_CONSEQUENCE",
+        "DECISION_POSTURE",
+        "UNRESOLVED_QUESTION"
+      ]
+    },
+    "statement": {"type": "string", "minLength": 1},
+    "status": {
+      "enum": ["DOCUMENTED", "SUPPORTED_INFERENCE", "HYPOTHESIS", "QUESTION", "UNRESOLVED", "CONTRADICTED"]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "version_or_edition", "locator", "listed_authors", "direct_or_derived", "independence_group"],
+      "properties": {
+        "source_id": {"type": "string", "minLength": 1},
+        "version_or_edition": {"type": "string", "minLength": 1},
+        "locator": {"type": ["string", "null"]},
+        "listed_authors": {"type": "array", "items": {"type": "string"}},
+        "observed_at": {"type": ["string", "null"], "format": "date-time"},
+        "published_at": {"type": ["string", "null"], "format": "date-time"},
+        "retrieved_at": {"type": ["string", "null"], "format": "date-time"},
+        "direct_or_derived": {"enum": ["DIRECT", "DERIVED"]},
+        "independence_group": {"type": "string", "minLength": 1}
+      }
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rule_id", "scope"],
+      "properties": {
+        "rule_id": {"type": "string", "pattern": "^TAL-AUTH-[0-9]{3}$"},
+        "scope": {"type": "string", "minLength": 1}
+      }
+    },
+    "transformation_chain": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["step", "input", "output", "assumptions"],
+        "properties": {
+          "step": {"type": "integer", "minimum": 1},
+          "input": {"type": "string", "minLength": 1},
+          "output": {"type": "string", "minLength": 1},
+          "assumptions": {"type": "array", "items": {"type": "string"}}
+        }
+      },
+      "default": []
+    },
+    "historical_availability": {
+      "enum": ["AVAILABLE_AT_DECISION_TIME", "NOT_AVAILABLE_AT_DECISION_TIME", "UNKNOWN", "NOT_APPLICABLE"]
+    },
+    "contradictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_id", "locator", "effect"],
+        "properties": {
+          "source_id": {"type": "string", "minLength": 1},
+          "locator": {"type": "string", "minLength": 1},
+          "effect": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "architecture_effect": {"enum": ["NONE", "QUESTION_ONLY", "EXPERIMENT_EVIDENCE"]},
+    "execution_effect": {"const": "NONE"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"claim_type": {"const": "DERIVED_MARKET_METRIC"}}},
+      "then": {
+        "properties": {
+          "source": {"type": "object", "properties": {"direct_or_derived": {"const": "DERIVED"}}},
+          "transformation_chain": {"type": "array", "minItems": 1}
+        },
+        "required": ["transformation_chain"]
+      }
+    },
+    {
+      "if": {"properties": {"claim_type": {"const": "MARKET_OBSERVATION"}}},
+      "then": {
+        "properties": {
+          "source": {
+            "type": "object",
+            "required": ["observed_at"],
+            "properties": {"observed_at": {"type": "string", "format": "date-time"}}
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "claim_type": {
+            "enum": ["TECHNICAL_PROPOSITION", "AUTHOR_PUBLIC_ACT", "INSTRUMENT_TERM"]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "source": {"type": "object", "properties": {"locator": {"type": "string", "minLength": 1}}}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"claim_type": {"const": "TALEB_EXACT_EXPRESSION"}}},
+      "then": {
+        "properties": {
+          "source": {"type": "object", "properties": {"locator": {"type": "string", "minLength": 1}}}
+        }
+      }
+    }
+  ]
+}

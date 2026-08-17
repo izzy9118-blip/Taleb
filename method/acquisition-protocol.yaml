@@ -17,8 +17,7 @@ source_classes:
   - DIRECT_INTERLOCUTOR
   - CONTEMPORANEOUS_CONTEXT
   - EDITORIAL_TRANSMISSION
-  - SECONDARY_SCHOLARSHIP
-  - DERIVATIVE_COMMENTARY
+  - SPECIFIC_EXTERNAL_CHALLENGE
 
 acquisition_states:
   - IDENTIFIED
@@ -38,8 +37,9 @@ read_states:
 
 laws:
   source_precedence: >-
-    Primary sources govern secondary accounts. Secondary material may locate,
-    contextualize, or challenge primary evidence but may not override it.
+    Primary sources govern reconstruction. An external challenge may enter only for
+    a named project question and may not substitute for the primary evidence it
+    identifies or contests. Unrelated external material is rejected.
   exact_witness: >-
     Every acquired artifact records edition or version, access path, acquisition
     date, retention state, and a digest when bytes are available.

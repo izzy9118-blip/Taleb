@@ -1,0 +1,51 @@
+record_type: taleb_source_hierarchy_test_matrix
+version: 0.1.0
+hierarchy: source-hierarchy.yaml
+claim_types: claim-types.yaml
+status: STRUCTURAL_TEST_MATRIX_ACTIVE
+
+cases:
+  - id: TAL-AUTH-TEST-001
+    input: page-pinned passage in an exact Incerto edition
+    expected_admission: ADMIT
+    expected_claim_type: TALEB_EXACT_EXPRESSION
+    expected_rule: TAL-AUTH-001
+  - id: TAL-AUTH-TEST-002
+    input: proposition in an exact Technical Incerto derivation
+    expected_admission: ADMIT
+    expected_claim_type: TECHNICAL_PROPOSITION
+    expected_rule: TAL-AUTH-003
+  - id: TAL-AUTH-TEST-003
+    input: exact interview or lecture statement required by a named project question
+    expected_admission: ADMIT
+    expected_claim_type: AUTHOR_PUBLIC_ACT
+    expected_rule: TAL-AUTH-004
+  - id: TAL-AUTH-TEST-004
+    input: archived public statement required by a named project question
+    expected_admission: ADMIT
+    expected_claim_type: AUTHOR_PUBLIC_ACT
+    expected_rule: TAL-AUTH-004
+  - id: TAL-AUTH-TEST-005
+    input: adjusted historical price series with raw inputs and adjustment chain
+    expected_admission: ADMIT
+    expected_claim_type: DERIVED_MARKET_METRIC
+    expected_rule: TAL-AUTH-008
+  - id: TAL-AUTH-TEST-006
+    input: timestamped options chain
+    expected_admission: ADMIT
+    expected_claim_type: MARKET_OBSERVATION
+    expected_rule: TAL-AUTH-006
+  - id: TAL-AUTH-TEST-007
+    input: revised economic release unavailable at the original decision time
+    expected_admission: ADMIT_WITH_HISTORICAL_UNAVAILABILITY
+    expected_claim_type: MARKET_OBSERVATION
+    expected_rule: TAL-AUTH-006
+  - id: TAL-AUTH-TEST-008
+    input: unrelated review, criticism, publisher page, promotion, or commentary
+    expected_admission: REJECT
+    expected_claim_type: null
+    expected_rule: DIRECT_PROJECT_RELEVANCE_REQUIRED
+
+pass_condition: >-
+  Every admitted case maps to an existing claim type and authority rule; the
+  irrelevant case is rejected; and passing proves classification only.

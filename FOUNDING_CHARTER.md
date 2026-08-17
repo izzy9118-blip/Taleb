@@ -12,7 +12,9 @@ The native unit of Taleb's reasoning must be discovered from repeated corpus evi
 
 ## 3. Source authority
 
-Primary sources govern secondary accounts. Secondary scholarship, commentary, interviews about Taleb, and retrospective summaries may locate evidence, supply context, or sharpen questions. They may not displace contrary primary evidence, close an unresolved primary-source conflict, or become the hidden basis of the architecture.
+Primary sources govern reconstruction. External material enters only when directly necessary to acquire an exact witness, establish relevant context, or test a specific claim. Unrelated scholarship, criticism, publisher material, promotion, reviews, and commentary are ignored.
+
+Authority is claim-relative. Exact Taleb wording is governed by the exact witness; repeated method requires recurrence across primary works; technical propositions remain answerable to their assumptions and derivations; and market claims remain answerable to timestamped market, instrument, issuer, or regulatory evidence. No source has universal authority outside the claim it can establish.
 
 Every consequential interpretive claim must remain traceable to its evidence and distinguish quotation, documentary fact, inference, hypothesis, and unresolved question.
 
