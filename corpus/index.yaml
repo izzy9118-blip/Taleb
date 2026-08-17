@@ -1,5 +1,5 @@
 record_type: taleb_corpus_index
-version: 0.1.0
+version: 0.2.0
 house: taleb
 status: FOUNDING_LEDGER_ACTIVE
 completeness: PENDING_PROBE
@@ -25,13 +25,15 @@ bibliographic_discovery:
     source_class: AUTHOR_PUBLICATION_MAP
     accessed_utc: 2026-08-16
     authority: IDENTIFIES_AUTHOR_PRESENTED_RELATIONSHIPS_NOT_TEXTUAL_CONTENT
+
+retired_discovery_records:
   - id: TAL-BIB-003
     title: Incerto Series
-    url: https://www.penguinrandomhouse.com/series/INO/incerto/
-    owner: Penguin Random House
-    source_class: PUBLISHER_CATALOG_CORROBORATION
-    accessed_utc: 2026-08-16
-    authority: BIBLIOGRAPHIC_CORROBORATION_ONLY
+    former_url: https://www.penguinrandomhouse.com/series/INO/incerto/
+    status: RETIRED_REDUNDANT_NOT_CORPUS
+    retired_by: ../governance/audits/2026-08-17-founding-audit.yaml
+    reason: Author-controlled publication records already identify the required works.
+    load_authority: NONE
 
 sources:
   - id: TAL-SRC-001
@@ -121,7 +123,7 @@ sources:
 
 coverage_limits:
   - The source list is an initial acquisition board, not a complete bibliography.
-  - Identification from an author or publisher page does not acquire the named work.
+  - Identification from an author publication map does not acquire the named work.
   - Technical articles, interviews, lectures, notebooks, revisions, and correspondence remain PENDING_PROBE.
   - No listed title has yet supplied an architectural claim.
 

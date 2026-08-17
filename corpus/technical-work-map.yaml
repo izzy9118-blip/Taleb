@@ -1,0 +1,40 @@
+record_type: taleb_technical_work_map
+version: 0.1.0
+house: taleb
+status: INITIAL_MARKET_AND_RISK_LANE_IDENTIFIED
+completeness: PENDING_PROBE
+discovery_ground: TAL-BIB-001
+discovery_url: https://www.fooledbyrandomness.com/CV.htm
+accessed_utc: 2026-08-17
+
+governing_rule: >-
+  These works are identified acquisition targets because the author-controlled
+  publication map places them in market, finance, probability, or risk fields. The
+  titles and field labels do not establish their arguments or their relation to a
+  specific Incerto passage.
+
+works:
+  - {id: TAL-TECH-001, year: 2026, authors: [N. El Hassan, B. Maddah, N. N. Taleb], title: Hidden Risks and Optionality in American Options, market_lane: OPTIONS_RISK}
+  - {id: TAL-TECH-002, year: 2023, authors: [N. N. Taleb], title: "Option pricing under power laws: a robust heuristic", market_lane: OPTION_PRICING}
+  - {id: TAL-TECH-003, year: 2022, authors: [R. Lagnado, N. N. Taleb], title: Pension Funds and Correlation, market_lane: PORTFOLIO_DEPENDENCE}
+  - {id: TAL-TECH-004, year: 2021, authors: [N. N. Taleb], title: "Bitcoin, Currencies, and Fragility", market_lane: CURRENCIES_FRAGILITY}
+  - {id: TAL-TECH-005, year: 2020, authors: [N. N. Taleb], title: "Transaction costs: much smaller than we thought", market_lane: MARKET_COSTS}
+  - {id: TAL-TECH-006, year: 2020, authors: [N. N. Taleb], title: On the mathematical difference between binary bets and real world payoffs, market_lane: PAYOFFS_FORECASTING}
+  - {id: TAL-TECH-007, year: 2019, authors: [N. N. Taleb], title: All roads lead to quantitative finance, market_lane: QUANTITATIVE_FINANCE}
+  - {id: TAL-TECH-008, year: 2018, authors: [N. N. Taleb], title: "Election Predictions as Martingales: An Arbitrage Approach", market_lane: MARTINGALES_FORECASTING}
+  - {id: TAL-TECH-009, year: 2015, authors: [N. N. Taleb], title: Unique Option Pricing Measure with Neither Dynamic Hedging nor Complete Markets, market_lane: OPTION_PRICING}
+  - {id: TAL-TECH-010, year: 2014, authors: [N. N. Taleb], title: "Elements of Quantitative Finance: Four Points Beginner Risk Managers Should Learn from Jeff Holman's Mistakes", market_lane: RISK_MANAGEMENT}
+  - {id: TAL-TECH-011, year: 2013, authors: [N. N. Taleb], title: "No, Small Probabilities are not Attractive to Sell", market_lane: TAIL_RISK}
+  - {id: TAL-TECH-012, year: 2012, authors: [N. N. Taleb, G. Martin], title: The Illusion of Thin Tails Under Aggregation, market_lane: AGGREGATION_TAILS}
+  - {id: TAL-TECH-013, year: 2010, authors: [E. G. Haug, N. N. Taleb], title: Option Traders use Heuristics, Never the Formula known as Black-Scholes-Merton Equation, market_lane: OPTION_PRACTICE}
+  - {id: TAL-TECH-014, year: 2009, authors: [N. N. Taleb], title: "Errors, Robustness, and the Fourth Quadrant", market_lane: DECISION_RISK}
+  - {id: TAL-TECH-015, year: 2008, authors: [N. N. Taleb], title: Infinite Variance and the Problems of Practice, market_lane: MATHEMATICAL_FINANCE}
+  - {id: TAL-TECH-016, year: 2007, authors: [D. G. Goldstein, N. N. Taleb], title: We Don't Quite Know What We Are Talking About When We Talk About Volatility, market_lane: VOLATILITY}
+  - {id: TAL-TECH-017, year: 2005, authors: [E. Derman, N. N. Taleb], title: The Illusion of Dynamic Replication, market_lane: DYNAMIC_HEDGING}
+  - {id: TAL-TECH-018, year: 2004, authors: [N. N. Taleb], title: "Bleed or Blowup: What Does Empirical Psychology Tell Us About the Preference For Negative Skewness?", market_lane: SKEWNESS}
+
+default_state:
+  acquisition_state: IDENTIFIED_NOT_ACQUIRED
+  read_state: NOT_READ
+  specific_incerto_relation: PENDING_DOCUMENTARY_MAPPING
+  architecture_effect: NONE

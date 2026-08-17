@@ -1,0 +1,40 @@
+record_type: taleb_acquisition_queue
+version: 0.1.0
+house: taleb
+status: ACTIVE
+completeness: PENDING_PROBE
+
+governing_rule: >-
+  Priority establishes the order of exact-witness acquisition, not doctrinal or
+  architectural importance. A queued work remains NOT_ACQUIRED until its own
+  acquisition record says otherwise.
+
+waves:
+  - wave: 1
+    purpose: establish exact witnesses for the core Incerto
+    targets: [TAL-SRC-001, TAL-SRC-002, TAL-SRC-003, TAL-SRC-004, TAL-SRC-005]
+    state: NOT_ACQUIRED
+  - wave: 2
+    purpose: establish the primary market and technical book ground
+    targets: [TAL-SRC-006]
+    state: NOT_ACQUIRED
+  - wave: 3
+    purpose: preserve already pinned open primary artifacts
+    targets: [TAL-SRC-007, TAL-SRC-008]
+    state: EXACT_REMOTE_PINS_PRESENT_LOCAL_RETENTION_ABSENT
+  - wave: 4
+    purpose: acquire the first market and risk technical-paper lane
+    target_registry: technical-work-map.yaml
+    state: IDENTIFIED_NOT_ACQUIRED
+  - wave: 5
+    purpose: admit author-controlled essays, lectures, interviews, notebooks, or public acts only when a specific project question requires them
+    state: PENDING_SPECIFIC_NEED
+  - wave: 6
+    purpose: admit external material only when directly necessary to acquire an exact witness or test a specific claim
+    state: PENDING_SPECIFIC_NEED
+
+prohibitions:
+  - no_bulk_collection_of_unrelated_material
+  - no_acquisition_state_from_title_identification
+  - no_read_state_from_acquisition
+  - no_architecture_from_queue_priority

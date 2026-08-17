@@ -1,0 +1,67 @@
+record_type: taleb_works_board
+version: 0.1.0
+house: taleb
+status: OWNER_APPROVED_FOUNDING_BOARD_ACTIVE
+completeness: PENDING_PROBE
+native_reasoning_unit: PENDING_PROBE
+
+discovery_ground:
+  - id: TAL-BIB-001
+    url: https://www.fooledbyrandomness.com/CV.htm
+    accessed_utc: 2026-08-17
+    role: AUTHOR_CONTROLLED_PUBLICATION_MAP
+  - id: TAL-BIB-002
+    url: https://fooledbyrandomness.com/
+    accessed_utc: 2026-08-17
+    role: AUTHOR_CONTROLLED_WORK_RELATION_MAP
+  - id: TAL-BIB-004
+    url: https://arxiv.org/abs/2001.10488v4
+    accessed_utc: 2026-08-17
+    role: EXACT_VERSION_RECORD_FOR_TAL_SRC_007
+
+work_lanes:
+  core_incerto:
+    governing_note: The author-controlled map states that the five volumes have no sequence.
+    works:
+      - {source_id: TAL-SRC-001, title: Fooled by Randomness, author_dates: 2001-2005, exact_target: 2005 second edition, acquisition_state: NOT_ACQUIRED}
+      - {source_id: TAL-SRC-002, title: "The Black Swan: The Impact of the Highly Improbable", author_dates: 2007-2010, exact_target: 2010 second edition, acquisition_state: NOT_ACQUIRED}
+      - {source_id: TAL-SRC-003, title: "The Bed of Procrustes: Philosophical and Practical Aphorisms", author_dates: 2010-2017, exact_target: 2017 second edition, acquisition_state: NOT_ACQUIRED}
+      - {source_id: TAL-SRC-004, title: "Antifragile: Things That Gain from Disorder", author_dates: 2012, exact_target: exact author-revised edition, acquisition_state: NOT_ACQUIRED}
+      - {source_id: TAL-SRC-005, title: "Skin in the Game: Hidden Asymmetries in Daily Life", author_dates: 2018, exact_target: exact author-revised edition, acquisition_state: NOT_ACQUIRED}
+  technical_books:
+    works:
+      - source_id: TAL-SRC-006
+        title: "Dynamic Hedging: Managing Vanilla and Exotic Options"
+        author_dates: 1997
+        exact_target: exact edition
+        acquisition_state: NOT_ACQUIRED
+        required_for: MARKET_ANALYSIS_FOUNDING_LANE
+      - source_id: TAL-SRC-007
+        title: "Statistical Consequences of Fat Tails: Real World Preasymptotics, Epistemology, and Applications"
+        exact_target: arXiv:2001.10488v4
+        edition: Third Revised Edition, 2025
+        acquisition_state: ACQUIRED_REMOTE_EXACT_ARTIFACT_PIN
+        acquisition_record: acquisitions/TAL-SRC-007-arxiv-v4.yaml
+      - work_id: TAL-WORK-009
+        title: "Fragility, Risk, and Convexity"
+        relation: Technical Incerto volume 2
+        author_status: TK
+        acquisition_state: NOT_ACQUIRED_NOT_YET_FIXED
+  primary_supplements:
+    works:
+      - source_id: TAL-SRC-008
+        title: Additional Aphorisms, Rules, and Heuristics (Added to the Incerto)
+        acquisition_state: ACQUIRED_REMOTE_EXACT_ARTIFACT_PIN
+        acquisition_record: acquisitions/TAL-SRC-008-author-pdf.yaml
+
+excluded_standing_lanes:
+  - unrelated_secondary_material
+  - unrelated_criticism
+  - publisher_promotion
+  - general_commentary
+
+limits:
+  - This board identifies works; it does not establish that they have been read.
+  - No title, series relation, or field label supplies architectural authority.
+  - Exact edition details not established by the author-controlled map remain acquisition questions.
+  - The technical article lane is maintained separately in technical-work-map.yaml.

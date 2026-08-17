@@ -1,0 +1,82 @@
+record_type: taleb_market_evidence_board
+version: 0.1.0
+house: taleb
+status: OWNER_APPROVED_FOUNDING_REQUIREMENT_DESIGN_ONLY
+completeness: PENDING_PROBE
+live_data_connection: NOT_ESTABLISHED
+analysis_runtime: NOT_OPERATIONAL
+trading_or_execution: NOT_AUTHORIZED
+native_reasoning_unit_effect: NONE
+
+scope:
+  required_capability: ANALYZE_MARKETS
+  first_ground: [listed_equities, indices, options, derivatives]
+  cross_asset_extension: [rates, credit, currencies, commodities, crypto]
+  extension_rule: instrument-specific evidence requirements precede analysis
+
+separation_rule: >-
+  The documentary corpus reconstructs how Taleb reasons. Market evidence describes
+  the object presented for analysis. Neither surface may silently substitute for the
+  other.
+
+evidence_classes:
+  - id: MARKET_REFERENCE
+    contents: [instrument_identifiers, contract_terms, exchange_rules, calendars]
+  - id: MARKET_TRADES
+    contents: [prices, returns, volume, trade_timestamps]
+  - id: MARKET_QUOTES
+    contents: [bid, ask, size, depth, quote_timestamps]
+  - id: MARKET_OPTIONS
+    contents: [chains, strikes, expiries, open_interest, implied_volatility_inputs, skew, term_structure]
+  - id: MARKET_FUNDING
+    contents: [rates, borrow, margin, collateral, leverage, liquidation_conditions]
+  - id: MARKET_LIQUIDITY
+    contents: [spreads, depth, turnover, market_impact, trading_halts]
+  - id: MARKET_DEPENDENCE
+    contents: [cross_asset_series, correlation_inputs, concentration, common_exposures]
+  - id: MARKET_CORPORATE
+    contents: [corporate_actions, issuer_filings, fundamentals]
+  - id: MARKET_REGULATORY
+    contents: [regulatory_filings, rule_changes, official_event_records]
+  - id: MARKET_DERIVED
+    contents: [adjusted_series, volatility, surfaces, scenarios, model_outputs]
+  - id: MARKET_PROXIES
+    contents: [positioning_estimates, flow_estimates, surveys]
+
+required_fields:
+  - source
+  - instrument_identifier
+  - observed_at
+  - timezone
+  - frequency
+  - raw_or_derived
+  - transformation_chain
+  - adjustment_state
+  - missingness
+  - revision_history
+  - historical_availability
+  - limitations
+
+future_analysis_record:
+  required_sections:
+    - market_state
+    - data_limitations
+    - exposures_and_payoff_asymmetries
+    - tail_and_model_assumptions
+    - fragility_convexity_leverage_liquidity_and_ruin
+    - conventional_metric_failure_risks
+    - scenario_sensitive_consequences
+    - inference_bounds
+    - decision_posture
+  execution_effect: NONE
+
+prohibitions:
+  - no_hidden_lookahead
+  - no_backfilled_data_as_historically_available
+  - no_derived_metric_without_transformation_chain
+  - no_commentary_substituted_for_market_evidence
+  - no_market_narrative_as_observation
+  - no_automatic_trade_recommendation
+  - no_order_generation
+  - no_execution
+  - no_market_capability_used_to_predeclare_house_architecture

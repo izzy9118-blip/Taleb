@@ -11,6 +11,10 @@ Current status: `FOUNDING`, `NOT_OPERATIONAL`, and `PENDING_PROBE`. Semantic com
 - `manifest.yaml` records machine-readable status, source precedence, and safeguards.
 - `FOUNDING_CHARTER.md` governs the inquiry until an evidence-backed architecture is proposed and separately ratified.
 - `corpus/index.yaml` distinguishes identified, acquired, pinned, and read sources.
+- `corpus/works.yaml` maps the approved founding work universe without treating titles as readings.
+- `corpus/acquisition-queue.yaml` orders exact-witness acquisition.
+- `corpus/technical-work-map.yaml` identifies the first market and risk paper lane without inferring its final relation to the Incerto.
+- `market/evidence-board.yaml` defines the market evidence Taleb will eventually analyze, separately from the documentary corpus.
 - `method/acquisition-protocol.yaml` governs admission of material into the corpus.
 - `method/aphorism-reading-protocol.yaml` follows the reading constraint stated by the author-hosted aphorism witness.
 - `readings/index.yaml` admits bounded, page-pinned reading records without converting them into architecture.
@@ -19,6 +23,10 @@ Current status: `FOUNDING`, `NOT_OPERATIONAL`, and `PENDING_PROBE`. Semantic com
 Failed architectural experiments must remain visible as dated, attributable records. They may be superseded, but never silently rewritten or presented as though they had not occurred.
 
 No AI system may certify this repository, authorize its transition to operational status, or imitate Taleb's voice before a separately evidenced and human-ratified voice discipline exists.
+
+## Market mandate
+
+Market analysis is a required capability of the Taleb house. The future analysis must bind every market claim to timestamped evidence, make transformations and historical availability visible, examine exposures and payoff asymmetries, and preserve the boundary between inference and decision. This mandate does not name the native unit of Taleb's reasoning and grants no trading or execution authority.
 
 ## Present corpus state
 
