@@ -1,0 +1,43 @@
+record_type: taleb_aphorism_reading_protocol
+id: TAL-METHOD-APH-001
+version: 0.1.0
+status: SOURCE_GROUNDED_ACTIVE_FOR_TAL_SRC_008
+completeness: PENDING_PROBE
+self_certification: PROHIBITED
+
+source_basis:
+  source_id: TAL-SRC-008
+  locator: PDF page 1, NOTICE
+  documented_instruction:
+    form_is_not_conventional_text: true
+    maximum_aphorisms_per_sitting: 4
+    random_selection_preferred: true
+  authority_limit: >-
+    This instruction governs the reading of TAL-SRC-008 only. It is not yet a
+    general Taleb method or evidence of the native reasoning unit.
+
+rules:
+  structure_scan: >-
+    Extraction, indexing, and inspection of the document as a whole are recorded as
+    a structure scan, never as a completed substantive reading.
+  selection: >-
+    Each sitting selects no more than four aphorisms by a recorded random or
+    externally supplied procedure before interpretation begins.
+  locators: >-
+    Every selected aphorism records its printed identifier and PDF page.
+  sitting_boundary: >-
+    Observations close at the end of the sitting. Later recurrence may connect
+    sittings only through a new, visible record.
+  non_synthesis: >-
+    A sitting does not have to produce unity. Divergence among selected aphorisms
+    remains affirmative evidence against premature architecture.
+  voice: >-
+    Aphorism reading supplies no permission to imitate compressed syntax, invective,
+    humor, or other surface features.
+  correction: >-
+    Selection or locator errors are corrected forward. The erroneous record remains
+    visible and names its successor.
+
+validation_boundary: >-
+  A check may reproduce the random selection and confirm locators. It cannot certify
+  interpretation, architectural significance, or semantic completion.

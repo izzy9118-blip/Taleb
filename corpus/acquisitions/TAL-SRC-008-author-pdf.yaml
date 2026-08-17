@@ -20,7 +20,7 @@ authority:
   role: PRIMARY_AUTHOR_HOSTED_WORKING_WITNESS
   exact_artifact_identified: true
   relationship_to_published_edition: NOT_YET_ESTABLISHED
-  read_state: NOT_READ
+  read_state: READING_IN_PROGRESS
   quotation_state: NOT_PAGE_PINNED
   architecture_effect: NONE
   notice: >-

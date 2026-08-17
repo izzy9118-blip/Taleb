@@ -12,6 +12,8 @@ Current status: `FOUNDING`, `NOT_OPERATIONAL`, and `PENDING_PROBE`. Semantic com
 - `FOUNDING_CHARTER.md` governs the inquiry until an evidence-backed architecture is proposed and separately ratified.
 - `corpus/index.yaml` distinguishes identified, acquired, pinned, and read sources.
 - `method/acquisition-protocol.yaml` governs admission of material into the corpus.
+- `method/aphorism-reading-protocol.yaml` follows the reading constraint stated by the author-hosted aphorism witness.
+- `readings/index.yaml` admits bounded, page-pinned reading records without converting them into architecture.
 - `experiments/index.yaml` preserves every architectural trial and its outcome.
 
 Failed architectural experiments must remain visible as dated, attributable records. They may be superseded, but never silently rewritten or presented as though they had not occurred.
@@ -20,4 +22,4 @@ No AI system may certify this repository, authorize its transition to operationa
 
 ## Present corpus state
 
-The initial bibliography has been established from Taleb's official research biography and author site. Two freely available primary artifacts have exact remote pins; the other named works remain acquisition targets. No source is recorded as read, no architectural experiment has begun, and the native reasoning unit remains `PENDING_PROBE`.
+The initial bibliography has been established from Taleb's official research biography and author site. Two freely available primary artifacts have exact remote pins; the other named works remain acquisition targets. Governed reading has begun on both pinned artifacts, but neither source is recorded as fully read. No architectural experiment has begun, and the native reasoning unit remains `PENDING_PROBE`.

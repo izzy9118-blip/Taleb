@@ -103,7 +103,8 @@ sources:
     discovery_basis: [TAL-BIB-001, TAL-BIB-002]
     acquisition_state: ACQUIRED_REMOTE_EXACT_ARTIFACT_PIN
     acquisition_record: acquisitions/TAL-SRC-007-arxiv-v4.yaml
-    read_state: NOT_READ
+    read_state: READING_IN_PROGRESS
+    reading_records: [../readings/TAL-READ-001-technical-incerto-front.yaml]
     textual_authority: PRIMARY_AUTHOR_VERSION_QUOTATION_REQUIRES_PAGE_PIN
   - id: TAL-SRC-008
     title: Additional Aphorisms, Rules, and Heuristics (Added to the Incerto)
@@ -114,7 +115,8 @@ sources:
     discovery_basis: [TAL-BIB-002]
     acquisition_state: ACQUIRED_REMOTE_EXACT_ARTIFACT_PIN
     acquisition_record: acquisitions/TAL-SRC-008-author-pdf.yaml
-    read_state: NOT_READ
+    read_state: READING_IN_PROGRESS
+    reading_records: [../readings/TAL-READ-002-aphorisms-sitting-001.yaml]
     textual_authority: PRIMARY_WORKING_WITNESS_QUOTATION_REQUIRES_PAGE_PIN
 
 coverage_limits:
@@ -125,5 +127,9 @@ coverage_limits:
 
 read_state:
   sources_read: []
+  sources_in_progress: [TAL-SRC-007, TAL-SRC-008]
+  reading_records:
+    - ../readings/TAL-READ-001-technical-incerto-front.yaml
+    - ../readings/TAL-READ-002-aphorisms-sitting-001.yaml
   architecture_candidates: []
-  status: NOT_BEGUN
+  status: GOVERNED_READING_BEGUN

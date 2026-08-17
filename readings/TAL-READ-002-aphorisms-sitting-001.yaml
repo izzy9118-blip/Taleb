@@ -1,0 +1,66 @@
+record_type: taleb_reading_record
+id: TAL-READ-002
+version: 0.1.0
+status: SITTING_COMPLETE_SOURCE_READING_IN_PROGRESS
+source_id: TAL-SRC-008
+date: 2026-08-16
+self_certification: PROHIBITED
+
+witness:
+  exact_version: author-hosted PDF retrieved 2026-08-16
+  sha256: 539322d2e1303c98d06dd742da2c6e1b6e74589e285d8b30e8a10cbde2c223a9
+  acquisition_record: ../corpus/acquisitions/TAL-SRC-008-author-pdf.yaml
+
+source_instruction:
+  locator: PDF page 1, NOTICE
+  consequence: >-
+    Whole-document extraction was classified as a structure scan. Substantive
+    reading followed the source's maximum of four randomly selected aphorisms.
+
+selection:
+  procedure: PYTHON_RANDOM_SAMPLE_OVER_ORDERED_PRINTED_IDENTIFIERS
+  population: >-
+    222 printed identifiers: integers 1 through 217, with 19a, 36a, 69b, 135a,
+    and 198a placed immediately after their integer base
+  seed_material: 539322d2e1303c98d06dd742da2c6e1b6e74589e285d8b30e8a10cbde2c223a9|TAL-READ-002|2026-08-16
+  seed_sha256: 9122dabe187150afe7d177e12bdc3acb739b54fa87c6fec6950457b73bc83901
+  selected_identifiers: [103, 85, 106, 205]
+  count: 4
+  reproducibility_state: REPRODUCIBLE
+
+selected_readings:
+  - identifier: 103
+    locator: PDF page 11, section XI
+    kind: DOCUMENTED_SOURCE_CLAIM
+    paraphrase: silence carries information only when the silent person possesses the skill to speak
+  - identifier: 85
+    locator: PDF page 9, section VIII
+    kind: DOCUMENTED_SOURCE_CLAIM
+    paraphrase: >-
+      a recommendation of moderate book length is countered by successful examples
+      at both extremes of length
+  - identifier: 106
+    locator: PDF page 11, section XII
+    kind: DOCUMENTED_SOURCE_CLAIM
+    paraphrase: what survives through time is not thereby fair or moral
+  - identifier: 205
+    locator: PDF page 20, section XX
+    kind: DOCUMENTED_SOURCE_CLAIM
+    paraphrase: dismissal of real-world experience is attributed to lack of such experience
+
+cross_item_observations:
+  - kind: LIMITED_RECURRENCE
+    paraphrase: >-
+      Items 103 and 205 both condition epistemic standing on demonstrated capacity,
+      but two aphorisms within one witness and one sitting cannot support architecture.
+  - kind: NON_SYNTHESIS
+    paraphrase: >-
+      Items 85 and 106 do not require the same organizing explanation as items 103
+      and 205. Their divergence is preserved rather than forced into a common unit.
+
+outcome:
+  architecture_candidate_opened: false
+  experiment_id: null
+  native_reasoning_unit: PENDING_PROBE
+  voice_effect: NONE
+  next_sitting: PENDING_SEPARATE_RECORDED_ACT

@@ -1,0 +1,72 @@
+record_type: taleb_reading_record
+id: TAL-READ-001
+version: 0.1.0
+status: DECLARED_SCOPE_COMPLETE_SOURCE_READING_IN_PROGRESS
+source_id: TAL-SRC-007
+date: 2026-08-16
+self_certification: PROHIBITED
+
+witness:
+  exact_version: arXiv:2001.10488v4
+  sha256: 758e18b7337840104db93296144d67cf5514bf2de128fe557dc84bc32a0ad567
+  acquisition_record: ../corpus/acquisitions/TAL-SRC-007-arxiv-v4.yaml
+
+scope:
+  pdf_pages: 1-22
+  printed_scope: front matter through printed page 8
+  substantive_focus: prologue, printed pages 3-6
+  source_completion: INCOMPLETE
+  extraction: PYPDF_TEXT_CHECKED_AGAINST_RENDERED_PAGES
+  visual_checks: [PDF page 17, PDF page 18, PDF page 19, PDF page 20]
+
+documented_observations:
+  - id: TAL-READ-001-O1
+    locator: PDF page 17, printed page 3
+    kind: DOCUMENTED_SOURCE_CLAIM
+    paraphrase: >-
+      The project distinguishes severe uncertainty about the world from the relative
+      determinacy of action under that uncertainty.
+  - id: TAL-READ-001-O2
+    locator: PDF page 18, printed page 4
+    kind: DOCUMENTED_SOURCE_CLAIM
+    paraphrase: >-
+      The Incerto is presented as connecting mathematical, philosophical, social,
+      contractual, decisional, and real-world domains around tails and extremes.
+  - id: TAL-READ-001-O3
+    locator: PDF page 18, printed page 4
+    kind: DOCUMENTED_SOURCE_CLAIM
+    paraphrase: >-
+      Decision theory is distinguished from world-description and directed toward
+      avoiding trouble and preserving survival.
+  - id: TAL-READ-001-O4
+    locator: PDF page 20, printed page 6
+    kind: DOCUMENTED_SOURCE_CLAIM
+    paraphrase: >-
+      Unreliable information may warrant suspended belief or removal of a faulty
+      metric; the absence of a substitute does not rescue an unreliable tool.
+  - id: TAL-READ-001-O5
+    locator: PDF page 18, printed page 4
+    kind: UNRESOLVED_TEXTUAL_TENSION
+    paraphrase: >-
+      The source announces five connected fields but the ensuing list names six.
+      The record preserves the discrepancy without silently repairing it.
+
+architectural_questions:
+  - id: TAL-Q-001
+    status: QUESTION_ONLY
+    question: >-
+      Does the repeated bridge from limited knowledge to consequential action reveal
+      a native unit, or is it only the organizing claim of this technical volume?
+    required_test: recurrence in separately acquired Incerto works and contrary cases
+  - id: TAL-Q-002
+    status: QUESTION_ONLY
+    question: >-
+      Are exposure, survival, removal, and decision coordinated by one unit or are
+      they distinct instruments that must remain separate?
+    required_test: cross-work comparison without importing glossary labels as answers
+
+outcome:
+  architecture_candidate_opened: false
+  experiment_id: null
+  native_reasoning_unit: PENDING_PROBE
+  next_reading: continue the nontechnical overview before any candidate is proposed

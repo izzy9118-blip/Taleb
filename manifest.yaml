@@ -1,6 +1,6 @@
 schema_version: 1.0
 record_type: taleb_founding_manifest
-version: 0.2.0
+version: 0.3.0
 
 identity:
   house: taleb
@@ -55,7 +55,9 @@ records:
   founding_charter: FOUNDING_CHARTER.md
   corpus: corpus/index.yaml
   method: method/acquisition-protocol.yaml
+  aphorism_reading_protocol: method/aphorism-reading-protocol.yaml
   source_index: corpus/index.yaml
+  reading_index: readings/index.yaml
   experiment_history: experiments/index.yaml
   voice_discipline: PENDING_PROBE
   operational_contract: PENDING_PROBE
@@ -65,6 +67,8 @@ load_order:
   - FOUNDING_CHARTER.md
   - method/acquisition-protocol.yaml
   - corpus/index.yaml
+  - method/aphorism-reading-protocol.yaml
+  - readings/index.yaml
   - experiments/index.yaml
 
 transitions:
