@@ -1,0 +1,62 @@
+record_type: taleb_founding_audit
+id: TAL-AUDIT-2026-08-17-001
+date: 2026-08-17
+status: OWNER_APPROVED_PHASE_1_EXECUTED
+self_certification: PROHIBITED
+decision_record: ../decisions/2026-08-17-approved-plan-phases-1-3.yaml
+
+scope:
+  branch: agent/taleb-founding-layer
+  commits_reviewed:
+    - ca079eefbd5ed834a87b880d07f7ea50bfaf760d
+    - 855115c8e320eab3109f8e1d3406a33750377c66
+    - a8ff703246a80565ac16204bdc0201eb969cabb8
+    - 2cf4456e0caa643281b421eeecc44d8f342289c7
+
+findings:
+  - id: TAL-AUDIT-F01
+    subject: founding_act
+    result: PASS
+    ground: Taleb is unequivocally founded while operational status remains separate.
+  - id: TAL-AUDIT-F02
+    subject: semantic_status
+    result: PASS
+    ground: Semantic completion and the native reasoning unit remain PENDING_PROBE.
+  - id: TAL-AUDIT-F03
+    subject: ai_authority
+    result: PASS
+    ground: Self-certification and premature voice imitation remain prohibited.
+  - id: TAL-AUDIT-F04
+    subject: experimental_memory
+    result: PASS
+    ground: Failed architectural experiments must remain visible through forward correction.
+  - id: TAL-AUDIT-F05
+    subject: market_analysis
+    result: FORWARD_CORRECTION_REQUIRED_IN_PHASE_2
+    ground: The approved plan makes market analysis a required house capability.
+  - id: TAL-AUDIT-F06
+    subject: redundant_publisher_discovery
+    result: FORWARD_CORRECTION_REQUIRED_IN_PHASE_2
+    ground: TAL-BIB-003 is unnecessary where author-controlled publication records suffice.
+  - id: TAL-AUDIT-F07
+    subject: source_admission
+    result: FORWARD_CORRECTION_REQUIRED_IN_PHASE_3
+    ground: Unrelated external material must be ignored rather than governed as standing corpus.
+  - id: TAL-AUDIT-F08
+    subject: pre_plan_readings
+    result: RETAIN_AS_FOUNDING_HISTORY
+    ground: >-
+      TAL-READ-001 and TAL-READ-002 opened no architectural candidate. They remain
+      visible but gain no plan-level authority before an approved reading phase.
+  - id: TAL-AUDIT-F09
+    subject: Sanctum_and_merge
+    result: PASS
+    ground: Taleb remains unregistered and the founding branch remains unmerged.
+
+outcome:
+  founding_layer: ACCEPTED
+  forward_corrections: [TAL-AUDIT-F05, TAL-AUDIT-F06, TAL-AUDIT-F07]
+  destructive_rewrite_required: false
+  architecture_candidate_opened: false
+  native_reasoning_unit: PENDING_PROBE
+  operational_status: NOT_AUTHORIZED

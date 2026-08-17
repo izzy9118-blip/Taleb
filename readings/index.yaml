@@ -5,6 +5,14 @@ status: GOVERNED_READING_ACTIVE
 completeness: PENDING_PROBE
 native_reasoning_unit: PENDING_PROBE
 
+history_notice:
+  status: PRE_PLAN_FOUNDING_HISTORY_RETAINED
+  governing_audit: ../governance/audits/2026-08-17-founding-audit.yaml
+  authority: >-
+    These readings predate the owner-approved build plan. They remain accurate
+    records of bounded acts but supply no architectural ground unless admitted by a
+    later approved reading discipline.
+
 governing_rule: >-
   A reading record has authority only for its declared source, witness, and scope.
   Reading observations remain below architectural experiments until recurrence and
@@ -15,11 +23,13 @@ records:
     source_id: TAL-SRC-007
     path: TAL-READ-001-technical-incerto-front.yaml
     status: DECLARED_SCOPE_COMPLETE_SOURCE_READING_IN_PROGRESS
+    plan_authority: FOUNDING_HISTORY_ONLY
     architecture_effect: NONE
   - id: TAL-READ-002
     source_id: TAL-SRC-008
     path: TAL-READ-002-aphorisms-sitting-001.yaml
     status: SITTING_COMPLETE_SOURCE_READING_IN_PROGRESS
+    plan_authority: FOUNDING_HISTORY_ONLY
     architecture_effect: NONE
 
 architecture_candidates: []

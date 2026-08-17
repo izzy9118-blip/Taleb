@@ -1,0 +1,32 @@
+record_type: taleb_owner_decision
+id: TAL-DEC-2026-08-17-001
+date: 2026-08-17
+status: OWNER_APPROVED
+self_certification: PROHIBITED
+
+decision:
+  approved_phases:
+    - 1_founding_audit
+    - 2_corpus_and_market_evidence_boards
+    - 3_claim_relative_source_authority
+  implementation_authorized: true
+  market_analysis_required: true
+  market_analysis_limit: >-
+    Market analysis is a required capability of the Taleb house but does not
+    predeclare the native unit of Taleb's reasoning.
+
+phase_3_owner_amendments:
+  - Coauthored works enter as ordinary primary works with full bibliographic authorship; no contribution machinery is created.
+  - No separate translation machinery is created.
+  - Unrelated secondary, critical, publisher, promotional, and commentary material is ignored.
+  - Secondary or publisher material enters only when directly necessary to a specific project question or exact-source acquisition.
+
+authority:
+  source: owner instructions in the repository-building task
+  effect: authorizes implementation of approved phases only
+  does_not_authorize:
+    - operational minister status
+    - voice imitation
+    - semantic certification
+    - Sanctum registration
+    - branch merge
