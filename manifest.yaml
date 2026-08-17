@@ -1,6 +1,6 @@
 schema_version: 1.0
 record_type: taleb_founding_manifest
-version: 0.1.0
+version: 0.2.0
 
 identity:
   house: taleb
@@ -53,12 +53,19 @@ safeguards:
 records:
   readme: README.md
   founding_charter: FOUNDING_CHARTER.md
-  corpus: PENDING_PROBE
-  method: PENDING_PROBE
-  source_index: PENDING_PROBE
-  experiment_history: PENDING_PROBE
+  corpus: corpus/index.yaml
+  method: method/acquisition-protocol.yaml
+  source_index: corpus/index.yaml
+  experiment_history: experiments/index.yaml
   voice_discipline: PENDING_PROBE
   operational_contract: PENDING_PROBE
+
+load_order:
+  - manifest.yaml
+  - FOUNDING_CHARTER.md
+  - method/acquisition-protocol.yaml
+  - corpus/index.yaml
+  - experiments/index.yaml
 
 transitions:
   operational_status:

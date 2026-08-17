@@ -1,0 +1,29 @@
+record_type: taleb_source_acquisition
+version: 0.1.0
+source_id: TAL-SRC-008
+status: ACQUIRED_REMOTE_EXACT_ARTIFACT_PIN
+retrieved_utc: 2026-08-16
+
+artifact:
+  title: Additional Aphorisms, Rules, and Heuristics (Added to the Incerto)
+  author: Nassim Nicholas Taleb
+  artifact_url: https://fooledbyrandomness.com/aphorisms.pdf
+  host: fooledbyrandomness.com
+  pdf_title_metadata: Taleb_Procrustes_new_copyedited
+  pdf_creation_date: 2015-03-31
+  sha256: 539322d2e1303c98d06dd742da2c6e1b6e74589e285d8b30e8a10cbde2c223a9
+  bytes: 127503
+  pages: 21
+  repository_copy: NOT_COMMITTED
+
+authority:
+  role: PRIMARY_AUTHOR_HOSTED_WORKING_WITNESS
+  exact_artifact_identified: true
+  relationship_to_published_edition: NOT_YET_ESTABLISHED
+  read_state: NOT_READ
+  quotation_state: NOT_PAGE_PINNED
+  architecture_effect: NONE
+  notice: >-
+    Author hosting and an exact digest establish the working witness used for future
+    reading. They do not establish its relation to a published edition, authorize
+    voice imitation, or certify any interpretation.

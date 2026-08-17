@@ -1,0 +1,28 @@
+record_type: taleb_source_acquisition
+version: 0.1.0
+source_id: TAL-SRC-007
+status: ACQUIRED_REMOTE_EXACT_ARTIFACT_PIN
+retrieved_utc: 2026-08-16
+
+artifact:
+  title: "Statistical Consequences of Fat Tails: Real World Preasymptotics, Epistemology, and Applications"
+  author: Nassim Nicholas Taleb
+  version: arXiv:2001.10488v4
+  landing_url: https://arxiv.org/abs/2001.10488v4
+  artifact_url: https://arxiv.org/pdf/2001.10488v4
+  arxiv_updated_utc: 2025-09-17T07:38:53Z
+  sha256: 758e18b7337840104db93296144d67cf5514bf2de128fe557dc84bc32a0ad567
+  bytes: 34102041
+  pages: 523
+  repository_copy: NOT_COMMITTED
+
+authority:
+  role: PRIMARY_AUTHOR_VERSION
+  exact_artifact_identified: true
+  read_state: NOT_READ
+  quotation_state: NOT_PAGE_PINNED
+  architecture_effect: NONE
+  notice: >-
+    The digest fixes the remotely acquired bytes. It does not prove that the remote
+    artifact will remain available, that it is the final published edition, that it
+    has been read, or that any interpretation is correct.

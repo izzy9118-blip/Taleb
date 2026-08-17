@@ -1,0 +1,75 @@
+record_type: taleb_acquisition_protocol
+id: TAL-ACQ-001
+version: 0.1.0
+status: FOUNDING_ACTIVE
+completeness: PENDING_PROBE
+self_certification: PROHIBITED
+
+purpose: >-
+  Admit sources without confusing discovery, access, acquisition, reading,
+  interpretation, and architectural judgment.
+
+source_classes:
+  - PRIMARY_AUTHORED_WORK
+  - PRIMARY_AUTHOR_VERSION
+  - PRIMARY_AUTHOR_HOSTED_WORKING_WITNESS
+  - PRIMARY_INTERVIEW_OR_LECTURE
+  - DIRECT_INTERLOCUTOR
+  - CONTEMPORANEOUS_CONTEXT
+  - EDITORIAL_TRANSMISSION
+  - SECONDARY_SCHOLARSHIP
+  - DERIVATIVE_COMMENTARY
+
+acquisition_states:
+  - IDENTIFIED
+  - NOT_ACQUIRED
+  - ACCESS_LOCATED_NOT_PINNED
+  - ACQUIRED_REMOTE_EXACT_ARTIFACT_PIN
+  - ACQUIRED_LOCAL_ACCESS_COPY
+  - PAGE_PINNED
+  - SUPERSEDED
+
+read_states:
+  - NOT_READ
+  - READING_IN_PROGRESS
+  - READ_ONCE_PENDING_CROSS_WORK_TEST
+  - REPEATED_CROSS_WORK_EVIDENCE_RECORDED
+  - COUNTEREVIDENCE_RECORDED
+
+laws:
+  source_precedence: >-
+    Primary sources govern secondary accounts. Secondary material may locate,
+    contextualize, or challenge primary evidence but may not override it.
+  exact_witness: >-
+    Every acquired artifact records edition or version, access path, acquisition
+    date, retention state, and a digest when bytes are available.
+  state_separation: >-
+    Identification is not acquisition; acquisition is not reading; reading is not
+    interpretation; interpretation is not ratification.
+  quotation: >-
+    Exact wording may be quoted only from a pinned witness with a page, section, or
+    equivalent stable locator. OCR and search snippets are retrieval aids only.
+  absence: >-
+    NOT_ACQUIRED and search failure are unresolved access states, never evidence
+    that a source, concept, or counterexample does not exist.
+  revision: >-
+    Revisions and editions remain distinct witnesses until their relationship is
+    documented. A later edition does not silently erase an earlier formulation.
+  architecture: >-
+    No source title, celebrated term, isolated passage, or secondary synopsis may
+    name the native unit. A candidate must arise from repeated primary evidence,
+    include counterevidence, and be tested across distinct works or documentary forms.
+  voice: >-
+    Source acquisition does not authorize imitation. Voice requires a separate,
+    page-pinned, human-ratified discipline.
+  copyright: >-
+    The need for a source does not authorize its redistribution. Repository copies
+    must have a lawful basis; otherwise the ledger records governed access only.
+  correction: >-
+    Incorrect acquisitions and classifications are superseded by new records. The
+    original record remains visible with its failure and successor stated.
+
+validation_boundary: >-
+  Automated checks may establish syntax, required fields, path existence, and digest
+  form. They cannot certify source authenticity, reading quality, interpretation,
+  architectural adequacy, voice, or semantic completion.

@@ -1,0 +1,129 @@
+record_type: taleb_corpus_index
+version: 0.1.0
+house: taleb
+status: FOUNDING_LEDGER_ACTIVE
+completeness: PENDING_PROBE
+native_reasoning_unit: PENDING_PROBE
+
+governing_rule: >-
+  A known title is not an acquired source; an acquired source is not a read source;
+  a read source is not an interpretation; and an interpretation is not an
+  architecture. Primary sources govern all derivative accounts.
+
+bibliographic_discovery:
+  - id: TAL-BIB-001
+    title: Official Research Biography of Nassim Nicholas Taleb
+    url: https://www.fooledbyrandomness.com/CV.htm
+    owner: Nassim Nicholas Taleb
+    source_class: AUTHOR_BIBLIOGRAPHIC_STATEMENT
+    accessed_utc: 2026-08-16
+    authority: IDENTIFIES_AUTHOR_CLAIMED_PUBLICATION_MAP_NOT_TEXTUAL_CONTENT
+  - id: TAL-BIB-002
+    title: Nassim Nicholas Taleb's Home Page
+    url: https://fooledbyrandomness.com/
+    owner: Nassim Nicholas Taleb
+    source_class: AUTHOR_PUBLICATION_MAP
+    accessed_utc: 2026-08-16
+    authority: IDENTIFIES_AUTHOR_PRESENTED_RELATIONSHIPS_NOT_TEXTUAL_CONTENT
+  - id: TAL-BIB-003
+    title: Incerto Series
+    url: https://www.penguinrandomhouse.com/series/INO/incerto/
+    owner: Penguin Random House
+    source_class: PUBLISHER_CATALOG_CORROBORATION
+    accessed_utc: 2026-08-16
+    authority: BIBLIOGRAPHIC_CORROBORATION_ONLY
+
+sources:
+  - id: TAL-SRC-001
+    title: Fooled by Randomness
+    author: Nassim Nicholas Taleb
+    work_group: INCERTO
+    source_class: PRIMARY_AUTHORED_WORK
+    target_edition: 2005 second edition or later exact author-revised edition
+    discovery_basis: [TAL-BIB-001, TAL-BIB-002]
+    acquisition_state: NOT_ACQUIRED
+    read_state: NOT_READ
+    textual_authority: NONE_UNTIL_EXACT_EDITION_ACQUIRED
+  - id: TAL-SRC-002
+    title: "The Black Swan: The Impact of the Highly Improbable"
+    author: Nassim Nicholas Taleb
+    work_group: INCERTO
+    source_class: PRIMARY_AUTHORED_WORK
+    target_edition: 2010 second edition or later exact author-revised edition
+    discovery_basis: [TAL-BIB-001, TAL-BIB-002]
+    acquisition_state: NOT_ACQUIRED
+    read_state: NOT_READ
+    textual_authority: NONE_UNTIL_EXACT_EDITION_ACQUIRED
+  - id: TAL-SRC-003
+    title: "The Bed of Procrustes: Philosophical and Practical Aphorisms"
+    author: Nassim Nicholas Taleb
+    work_group: INCERTO
+    source_class: PRIMARY_AUTHORED_WORK
+    target_edition: 2017 second edition or later exact author-revised edition
+    discovery_basis: [TAL-BIB-001, TAL-BIB-002]
+    acquisition_state: NOT_ACQUIRED
+    read_state: NOT_READ
+    textual_authority: NONE_UNTIL_EXACT_EDITION_ACQUIRED
+  - id: TAL-SRC-004
+    title: "Antifragile: Things That Gain from Disorder"
+    author: Nassim Nicholas Taleb
+    work_group: INCERTO
+    source_class: PRIMARY_AUTHORED_WORK
+    target_edition: exact author-revised edition to be selected and pinned
+    discovery_basis: [TAL-BIB-001, TAL-BIB-002]
+    acquisition_state: NOT_ACQUIRED
+    read_state: NOT_READ
+    textual_authority: NONE_UNTIL_EXACT_EDITION_ACQUIRED
+  - id: TAL-SRC-005
+    title: "Skin in the Game: Hidden Asymmetries in Daily Life"
+    author: Nassim Nicholas Taleb
+    work_group: INCERTO
+    source_class: PRIMARY_AUTHORED_WORK
+    target_edition: exact author-revised edition to be selected and pinned
+    discovery_basis: [TAL-BIB-001, TAL-BIB-002]
+    acquisition_state: NOT_ACQUIRED
+    read_state: NOT_READ
+    textual_authority: NONE_UNTIL_EXACT_EDITION_ACQUIRED
+  - id: TAL-SRC-006
+    title: "Dynamic Hedging: Managing Vanilla and Exotic Options"
+    author: Nassim Nicholas Taleb
+    work_group: TECHNICAL_AND_NONLITERARY_BOOKS
+    source_class: PRIMARY_AUTHORED_WORK
+    target_edition: exact edition to be selected and pinned
+    discovery_basis: [TAL-BIB-001]
+    acquisition_state: NOT_ACQUIRED
+    read_state: NOT_READ
+    textual_authority: NONE_UNTIL_EXACT_EDITION_ACQUIRED
+  - id: TAL-SRC-007
+    title: "Statistical Consequences of Fat Tails: Real World Preasymptotics, Epistemology, and Applications"
+    author: Nassim Nicholas Taleb
+    work_group: TECHNICAL_INCERTO
+    source_class: PRIMARY_AUTHORED_OPEN_MONOGRAPH
+    exact_version: arXiv:2001.10488v4
+    discovery_basis: [TAL-BIB-001, TAL-BIB-002]
+    acquisition_state: ACQUIRED_REMOTE_EXACT_ARTIFACT_PIN
+    acquisition_record: acquisitions/TAL-SRC-007-arxiv-v4.yaml
+    read_state: NOT_READ
+    textual_authority: PRIMARY_AUTHOR_VERSION_QUOTATION_REQUIRES_PAGE_PIN
+  - id: TAL-SRC-008
+    title: Additional Aphorisms, Rules, and Heuristics (Added to the Incerto)
+    author: Nassim Nicholas Taleb
+    work_group: INCERTO_SUPPLEMENT
+    source_class: PRIMARY_AUTHOR_HOSTED_WORKING_WITNESS
+    exact_version: author-hosted PDF retrieved 2026-08-16
+    discovery_basis: [TAL-BIB-002]
+    acquisition_state: ACQUIRED_REMOTE_EXACT_ARTIFACT_PIN
+    acquisition_record: acquisitions/TAL-SRC-008-author-pdf.yaml
+    read_state: NOT_READ
+    textual_authority: PRIMARY_WORKING_WITNESS_QUOTATION_REQUIRES_PAGE_PIN
+
+coverage_limits:
+  - The source list is an initial acquisition board, not a complete bibliography.
+  - Identification from an author or publisher page does not acquire the named work.
+  - Technical articles, interviews, lectures, notebooks, revisions, and correspondence remain PENDING_PROBE.
+  - No listed title has yet supplied an architectural claim.
+
+read_state:
+  sources_read: []
+  architecture_candidates: []
+  status: NOT_BEGUN

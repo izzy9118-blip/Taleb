@@ -10,7 +10,14 @@ Current status: `FOUNDING`, `NOT_OPERATIONAL`, and `PENDING_PROBE`. Semantic com
 
 - `manifest.yaml` records machine-readable status, source precedence, and safeguards.
 - `FOUNDING_CHARTER.md` governs the inquiry until an evidence-backed architecture is proposed and separately ratified.
+- `corpus/index.yaml` distinguishes identified, acquired, pinned, and read sources.
+- `method/acquisition-protocol.yaml` governs admission of material into the corpus.
+- `experiments/index.yaml` preserves every architectural trial and its outcome.
 
 Failed architectural experiments must remain visible as dated, attributable records. They may be superseded, but never silently rewritten or presented as though they had not occurred.
 
 No AI system may certify this repository, authorize its transition to operational status, or imitate Taleb's voice before a separately evidenced and human-ratified voice discipline exists.
+
+## Present corpus state
+
+The initial bibliography has been established from Taleb's official research biography and author site. Two freely available primary artifacts have exact remote pins; the other named works remain acquisition targets. No source is recorded as read, no architectural experiment has begun, and the native reasoning unit remains `PENDING_PROBE`.

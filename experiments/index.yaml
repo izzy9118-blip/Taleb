@@ -1,0 +1,45 @@
+record_type: taleb_architectural_experiment_index
+version: 0.1.0
+house: taleb
+status: ACTIVE_EMPTY_INDEX
+completeness: PENDING_PROBE
+native_reasoning_unit: PENDING_PROBE
+next_experiment_id: TAL-ARCH-001
+
+governing_rule: >-
+  Architectural candidates begin as falsifiable experiments, not teachings. Every
+  experiment remains visible whether it survives, fails, or is superseded.
+
+required_record:
+  - id
+  - opened_date
+  - status
+  - candidate_unit
+  - originating_evidence
+  - cross_work_recurrence
+  - counterevidence
+  - competing_explanations
+  - tests
+  - outcome
+  - supersedes
+  - superseded_by
+  - human_review
+
+allowed_statuses:
+  - PROPOSED
+  - TESTING
+  - FAILED
+  - SURVIVED_LIMITED_TEST
+  - SUPERSEDED
+  - WITHDRAWN_WITH_REASONS
+
+prohibitions:
+  - no_deletion_of_failed_experiments
+  - no_silent_rewrite
+  - no_architecture_from_one_passage
+  - no_architecture_from_book_titles
+  - no_architecture_from_secondary_summary
+  - no_ai_ratification
+  - no_voice_consequence
+
+experiments: []
